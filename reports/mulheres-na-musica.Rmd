@@ -1,0 +1,28 @@
+---
+title: "Vozes femininas nos movimentos musicais brasileiros"
+author: "Ivyna Santino"
+date: "28 de maio de 2018"
+output:
+  html_document:
+    df_print: paged
+    toc: yes
+    toc_float: yes
+  html_notebook:
+    toc: yes
+    toc_float: yes
+---
+
+```{r setup, echo=FALSE, warning=FALSE, message=FALSE}
+library(dplyr)
+library(tidyverse)
+library(here)
+library(plotly)
+theme_set(theme_bw())
+```
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+tropicalistas = read_csv(here("data/mulheres-tropicalismo.csv"))
+jovem_guarda = read_csv(here("data/mulheres_jovem_guarda.csv"))
+bossa = read_csv(here("data/mulheres_bossa_nova.csv"))
+```
+
