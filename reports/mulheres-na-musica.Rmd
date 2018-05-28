@@ -1,5 +1,5 @@
 ---
-title: "Vozes femininas nos movimentos musicais brasileiros"
+title: "Análise dos movimentos musicais com vozes femininas"
 author: "Ivyna Santino"
 date: "28 de maio de 2018"
 output:
@@ -17,6 +17,7 @@ library(dplyr)
 library(tidyverse)
 library(here)
 library(plotly)
+library(data.table)
 theme_set(theme_bw())
 ```
 
@@ -24,5 +25,16 @@ theme_set(theme_bw())
 tropicalistas = read_csv(here("data/mulheres-tropicalismo.csv"))
 jovem_guarda = read_csv(here("data/mulheres_jovem_guarda.csv"))
 bossa = read_csv(here("data/mulheres_bossa_nova.csv"))
+
+trop_jovem <- full_join(tropicalistas, jovem_guarda) 
+cancoes <- merge(trop_jovem, bossa, all = TRUE)
+
 ```
+
+script do lab
+- juntar tabelas e colocar coluna com tipo de movimento OK
+- falar um pouco sobre cada movimento, o porquê das escolhas
+- perguntas
+- conclusões
+
 
