@@ -35,6 +35,14 @@ script do lab
 - juntar tabelas e colocar coluna com tipo de movimento OK
 - falar um pouco sobre cada movimento, o porquê das escolhas
 - perguntas
+    - Músicas com alto BPM são mais energéticas ou mais dançantes?
+    * Podemos dizer que músicas mais alegres são mais longas?
+    * E as tristes, tem menor duração?
+
+    - A instrumentabilidade de uma música afeta sua popularidade?
+    * Músicas gravadas ao vivo são mais energéticas?
+    * Podemos dizer que músicas mais populares são mais energéticas?
+
 - conclusões
 
 
