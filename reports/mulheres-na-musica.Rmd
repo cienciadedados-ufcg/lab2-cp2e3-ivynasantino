@@ -17,7 +17,6 @@ library(dplyr)
 library(tidyverse)
 library(here)
 library(plotly)
-library(data.table)
 theme_set(theme_bw())
 ```
 
@@ -44,5 +43,4 @@ script do lab
     * Podemos dizer que músicas mais populares são mais energéticas?
 
 - conclusões
-
 
