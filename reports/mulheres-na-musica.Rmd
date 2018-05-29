@@ -32,6 +32,88 @@ cancoes <- merge(trop_jovem, bossa, all = TRUE)
 
 
 ```{r}
+# 1
+cancoes %>% 
+    # musicas mt populares n sao mt instrumentais
+    plot_ly(y = ~instrumentalness,
+            x = ~track_popularity,
+            color = ~style,
+            text = ~paste('Música: ', track_name,
+                          '<br>Artista: ', artist_name))
+
+```
+
+
+```{r}
+#1.1
+cancoes %>% 
+    plot_ly(x = ~liveness,
+            y = ~energy,
+            size = ~track_popularity,
+            color = ~style,
+            type = 'scatter',
+            text = ~paste('Música: ', track_name,
+                          '<br>Artista: ', artist_name,
+                          '<br>Popularidade: ', track_popularity))
+```
+
+
+- Analisar Ne me quitte pas(liveness e acoustic) -> tempo, popularidade, energia, valencia
+
+
+```{r}
+# 1.2 tempo e valencia
+cancoes %>% 
+    plot_ly(x = ~duration_ms,
+            y = ~style,
+            type = 'scatter',
+            #mode = 'line',
+            color = ~valence,
+            size = ~track_popularity,
+            text = ~paste('Música: ', track_name,
+                          '<br>Artista: ', artist_name))
+
+```
+
+
+```{r}
+#2
+cancoes %>% 
+#energia e dancabilidade - jovem guarda
+    plot_ly(x = ~danceability,
+            y = ~track_popularity,
+            type = 'scatter',
+            #mode = 'line',
+            color = ~style,
+            size = ~energy,
+            text = ~paste('Música: ', track_name,
+                          '<br>Artista: ', artist_name))
+    
+#fala e popularidade - tropicalismo
+cancoes %>% 
+    plot_ly(x = ~speechiness,
+            y = ~instrumentalness,
+            type = 'scatter',
+            color = ~style,
+            size = ~track_popularity,
+            text = ~paste('Música: ', track_name,
+                          '<br>Artista: ', artist_name))
+    
+#acusticas, instrumental e popularidade - bossa nova
+cancoes %>% 
+    plot_ly(y = ~instrumentalness,
+            x = ~track_popularity,
+            type = 'scatter',
+            size = ~acousticness,
+            color = ~style,
+            text = ~paste('Música: ', track_name,
+                          '<br>Artista: ', artist_name))
+    
+
+```
+
+
+```{r}
 #2.1
 cancoes %>% 
     filter(artist_name %in% c("Elis Regina", "Nara Leão")) %>% 
@@ -44,19 +126,7 @@ cancoes %>%
                           '<br>Ano: ', year))
 ```
 
-```{r}
-#2.1
-cancoes %>% 
-    filter(artist_name %in% c("Elis Regina", "Nara Leão")) %>% 
-    plot_ly(x = ~artist_name,
-            y = ~track_name,
-            color = ~style,
-            type = 'scatter',
-            size = ~track_popularity,
-            text = ~paste("Artista: ", artist_name,
-                          '<br>Ano: ', year,
-                          '<br>Popularidade: ', track_popularity))
-```
+
 
 ```{r}
 #2.2
@@ -67,9 +137,10 @@ cancoes %>%
             type = 'scatter',
             size = ~track_popularity,
             #mode = 'line',
-            text = ~paste("Artista: ", artist_name,
-                          '<br>Música: ', track_name,
-                          '<br>Ano: ', year))
+            text = ~paste("Música: ", track_name,
+                          '<br>Artista: ', artist_name,
+                          '<br>Ano: ', year,
+                          '<br>Popularidade: ', track_popularity))
 ```
 
 
