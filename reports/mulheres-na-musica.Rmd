@@ -30,17 +30,19 @@ cancoes <- merge(trop_jovem, bossa, all = TRUE)
 
 ```
 
+
 script do lab
 - juntar tabelas e colocar coluna com tipo de movimento OK
 - falar um pouco sobre cada movimento, o porquê das escolhas
+- Mostrar as músicas que irão ser trabalhadas
 - perguntas
-    - Músicas com alto BPM são mais energéticas ou mais dançantes?
-    * Podemos dizer que músicas mais alegres são mais longas?
-    * E as tristes, tem menor duração?
-
+    
     - A instrumentabilidade de uma música afeta sua popularidade?
-    * Músicas gravadas ao vivo são mais energéticas?
-    * Podemos dizer que músicas mais populares são mais energéticas?
+    * Diante disso, podemos dizer que músicas gravadas ao vivo são mais energéticas? (Ex.: Ne me quittes pas - Maysa tem versão ao vivo e acústica)
+    * Em relação à duração da música, implica dizer que quanto maior mais alegre é ou acontece o inverso?
+    
+    - Existe algum padrão instrumental entre as músicas em cada movimento? (Citar música o barquinho, foi gravada por Nara e Maysa)
+    * Podemos notar que as cantoras Elis e Nara pertecem a dois movimentos musicais, a Bossa e Tropicalismo. Dessa forma, suas músicas são mais populares em qual dos movimentos? (questionar também: o padrão de suas músicas continuam os mesmos?) 
+    * Ao longo do tempo, as músicas de cada movimento ficam mais populares ou o movimento vai enfraquecendo?
 
 - conclusões
-
