@@ -1,7 +1,7 @@
 ---
-title: "Análise dos movimentos musicais a partir de vozes femininas"
+title: "Análise dos movimentos musicais através de vozes femininas"
 author: "Ivyna Santino"
-date: "28 de maio de 2018"
+date: "29 de maio de 2018"
 output:
   html_document:
     df_print: paged
@@ -30,12 +30,9 @@ cancoes <- merge(trop_jovem, bossa, all = TRUE)
 
 ```
 
-No Brasil houveram alguns movimentos musicais ao decorrer dos anos, e dessa vez, decidi analisar alguns deles nas vozes de cantoras que se destacaram em cada um desses movimentos a partir dos dados disponibilizados pela API do Spotify[link]. Dessa maneira, escolhi para representar a Jovem guarda as cantoras: Celly Campelo, Wanderléa e Diana, para a Bossa nova: Elis Regina, Nara Leão e Maysa e por fim, o Tropicalismo: Os mutantes, tendo como vocalista Rita Lee, Maria Bethânia e Gal Costa. Abaixo estão listadas as músicas que serão analisadas e informações como artista, ano de lançamento e a qual movimento musical pertence.
+No Brasil houveram alguns movimentos musicais ao decorrer dos anos, e dessa vez, decidi analisar alguns deles nas vozes de cantoras que se destacaram em cada um desses movimentos a partir dos dados disponibilizados pela [API do Spotify](https://beta.developer.spotify.com/dashboard/). Dessa maneira, escolhi para representar a Jovem guarda as cantoras: Celly Campelo, Wanderléa e Diana, para a Bossa nova: Elis Regina, Nara Leão e Maysa e por fim, o Tropicalismo: Os mutantes, tendo como vocalista Rita Lee, Maria Bethânia e Gal Costa. 
 
-Ps.: Os dados foram extraídos das seguintes playlists:
-    - [link]Só as poderosas - Bossa nova
-    - [link]Só as poderosas - Jovem guarda
-    - [link]Só as poderosas - Tropicalismo
+#### Abaixo estão listadas as músicas que serão analisadas e informações como artista, ano de lançamento e a qual movimento musical pertence.
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 cancoes %>% 
@@ -46,6 +43,15 @@ cancoes %>%
     select(Música, Artista, `Ano de lançamento`, `Movimento musical`)
 
 ```
+
+Ps.: Os dados foram extraídos das seguintes playlists:
+
+- [Só as poderosas - Bossa nova](https://open.spotify.com/user/ivynasantino/playlist/5N1iCCGGvmwjFtmDDSUYrL?si=zkYXOSvoSr6jzIiBjbNb9w)
+
+- [Só as poderosas - Jovem guarda](https://open.spotify.com/user/ivynasantino/playlist/6IlwuL4aXcG7XhGmNCdX1o?si=bQ8YAGc2RDmtoLZGMHHs9Q)
+
+- [Só as poderosas - Tropicalismo](https://open.spotify.com/user/ivynasantino/playlist/3LQkVGFEBjigT3F2hf6Ejp?si=5c9xT08hRlWvqhQ1FwC7mA)
+
 
 ## Podemos dizer que a instrumentabilidade de uma música afeta sua popularidade?
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
