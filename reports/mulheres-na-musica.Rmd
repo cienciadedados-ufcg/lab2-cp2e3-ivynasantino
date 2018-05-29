@@ -31,6 +31,49 @@ cancoes <- merge(trop_jovem, bossa, all = TRUE)
 ```
 
 
+```{r}
+#2.1
+cancoes %>% 
+    filter(artist_name %in% c("Elis Regina", "Nara Leão")) %>% 
+    plot_ly(y = ~track_popularity,
+            x = ~track_name,
+            color = ~style,
+            type = 'scatter',
+            mode = 'line',
+            text = ~paste("Artista: ", artist_name,
+                          '<br>Ano: ', year))
+```
+
+```{r}
+#2.1
+cancoes %>% 
+    filter(artist_name %in% c("Elis Regina", "Nara Leão")) %>% 
+    plot_ly(x = ~artist_name,
+            y = ~track_name,
+            color = ~style,
+            type = 'scatter',
+            size = ~track_popularity,
+            text = ~paste("Artista: ", artist_name,
+                          '<br>Ano: ', year,
+                          '<br>Popularidade: ', track_popularity))
+```
+
+```{r}
+#2.2
+cancoes %>% 
+    plot_ly(y = ~track_popularity,
+            x = ~year,
+            color = ~style,
+            type = 'scatter',
+            size = ~track_popularity,
+            #mode = 'line',
+            text = ~paste("Artista: ", artist_name,
+                          '<br>Música: ', track_name,
+                          '<br>Ano: ', year))
+```
+
+
+
 script do lab
 - juntar tabelas e colocar coluna com tipo de movimento OK
 - falar um pouco sobre cada movimento, o porquê das escolhas
@@ -41,7 +84,7 @@ script do lab
     * Diante disso, podemos dizer que músicas gravadas ao vivo são mais energéticas? (Ex.: Ne me quittes pas - Maysa tem versão ao vivo e acústica)
     * Em relação à duração da música, implica dizer que quanto maior mais alegre é ou acontece o inverso?
     
-    - Existe algum padrão instrumental entre as músicas em cada movimento? (Citar música o barquinho, foi gravada por Nara e Maysa)
+    - Existe algum padrão instrumental, entre as músicas em cada movimento? Ex.: são mais dançantes, possuem muita fala.(Citar música o barquinho, foi gravada por Nara e Maysa)
     * Podemos notar que as cantoras Elis e Nara pertecem a dois movimentos musicais, a Bossa e Tropicalismo. Dessa forma, suas músicas são mais populares em qual dos movimentos? (questionar também: o padrão de suas músicas continuam os mesmos?) 
     * Ao longo do tempo, as músicas de cada movimento ficam mais populares ou o movimento vai enfraquecendo?
 
