@@ -59,7 +59,9 @@ cancoes %>%
 
 ```
 
-A partir dos resultados obtidos acima, podemos dizer que a maioria das músicas com popularidade alta possuem baixa instrumentabilidade, como a música Como nossos pais - Elis Regina, possuindo popularidade de 61, no entanto instrumentabilidade 0. Podemos notar também que músicas pertencentes ao movimento da jovem guarda são pouco populares, mas sua instrumentabilidade, na maioria dos casos, tem valores altos. Dessa maneira, podemos ver que o Tropicalismo e Bossa nova são os movimentos mais populares. Talvez uma das explicações seja o fato de possuírem, Tropicalismo, músicas que citavam a insatistifação popular diante da ditadura militar e conquitavam o público em festivais, e no caso da Bossa, pelo fato mostrar letras mais leves e alegres que ressaltavam a brasilidade e vida boêmia do brasileiro. 
+A partir dos resultados obtidos acima, podemos dizer que a maioria das músicas com popularidade alta possuem baixa instrumentabilidade, como a música Como nossos pais - Elis Regina, possuindo popularidade de 61, no entanto instrumentabilidade 0. 
+
+Também podemos notar que músicas pertencentes ao movimento da jovem guarda são pouco populares, mas sua instrumentabilidade, na maioria dos casos, tem valores altos. Dessa maneira, podemos ver que o Tropicalismo e Bossa nova são os movimentos mais populares. Talvez uma das explicações, seja o fato de possuírem,  no caso do Tropicalismo, músicas que citavam a insatistifação popular diante da ditadura militar e conquitavam o público em festivais, e no caso da Bossa, pelo fato mostrar letras mais leves e alegres que ressaltavam a brasilidade e vida boêmia do brasileiro. 
 
 ### Diante disso, podemos dizer que músicas gravadas ao vivo são mais energéticas?
 
@@ -76,9 +78,9 @@ cancoes %>%
                           '<br>Popularidade: ', track_popularity))
 ```
 
-Primeiramente devemos deixar claro que a maioria das músicas das playlists são acústicas, por isso temos uma grande concentração de pontos com baixo índice de liveness. Mas ao deslizar um pouco sobre o gráfico, podemos notar que o Tropicalismo tem maior quantidade de pontos para músicas ao vivo, talvez pelo fato das músicas serem apresentadas em festivais de música ou shows. Mas voltando para a análise entre a relação de energia e músicas ao vivo, canções como Deus lhe Pague - Elis Regina e Carcará - Maria Bethânia possuem altos valores de energia. Em contrapartida, a API detectou que a música Foi tudo culpa do amor - Diana tem alta energia e zero para liveness, mas a faixa foi gravada ao vivo. 
+Primeiramente devemos deixar claro que a maioria das músicas das playlists são acústicas, por isso temos uma grande concentração de pontos com baixo índice de liveness. Mas ao deslizar um pouco sobre o gráfico, podemos notar que o Tropicalismo tem maior quantidade de pontos para músicas ao vivo, talvez pelo fato das músicas serem apresentadas em festivais de música ou shows. Dessa maneira, canções como Deus lhe Pague - Elis Regina e Carcará - Maria Bethânia possuem altos valores de energia e foram gravadas ao vivo, mas nem sempre canções gravadas ao vivo possuem altos índices de energia, temos como exemplo Pérola negra e Sim, foi você de Gal. 
 
-Outro fator que podemos destacar é a música Ne me quitte pas gravada por Maysa, adicionei a mesma faixa na playlist, sendo uma gravada ao vivo e outra acústica. Então podemos ver mais claramente a relação de energia e o estilo da gravação da música. Podemos ver a que a versão ao vivo possui maior energia, cerca de 423 de medida, no entanto a gravação acústica tem maior popularidade, com cerca de 14 pontos a mais na versão acústica, provavelmente pelo fato do som ser mais limpo, algo que está distante dos gritos e reações do público durante o show. 
+Outro fator que podemos destacar é a música Ne me quitte pas gravada por Maysa, adicionei a mesma canção na playlist, sendo uma gravada ao vivo e outra acústica, então podemos ver de forma mais clara a relação de energia e o estilo da gravação da música. Logo, podemos observar que a versão ao vivo possui maior energia, cerca de 423 de medida, no entanto a gravação acústica tem maior popularidade, com cerca de 14 pontos a mais na versão acústica, provavelmente pelo fato do som ser mais limpo, algo que está distante dos gritos e reações do público durante o show. 
 
 ### E com relação à duração da música, implica dizer que quanto maior mais alegre é ou acontece o inverso?
 
@@ -95,7 +97,8 @@ cancoes %>%
 
 ```
 
-Podemos observar que as músicas estão em um intervalo de duração, entre 100k e 300k. Dessa forma, canções como Opinião - Maria Bethânia e Vapor Barato - Gal Costa estão fora da faixa citada acima e com baixos valores de valência e energia, no entanto suas durações são totalmente opostos, caracterizando um humor de tristeza entre essas músicas. Outra observação interessante, é que Nara Leão e Maria Bethânia cantam a mesma música, mas como podemos ver acima os valores de valência são totalmente diferente. Nara Leão acrescenta elementos da Bossa nova em sua interpretação para a faixa Opinião, enquanto Maria Bethânia coloca sua marca, com interpretações mais lentas e com poucos instrumentos acompanhamento a voz.
+Podemos observar que as músicas estão em um intervalo de duração, entre 100k e 300k. Dessa forma, canções como Opinião - Maria Bethânia e Vapor Barato - Gal Costa estão fora da faixa citada acima e com baixos valores de valência e energia, caracterizando um humor de tristeza nessas músicas, no entanto suas durações estão em lados totalmente opostos. Logo características de tristeza ou alegria em uma canção não está atrelada a duração da faixa.
+Outra observação interessante é que Nara Leão e Maria Bethânia cantam a mesma música(Opinião), mas como podemos ver acima os valores de valência são totalmente diferentes, pois ao escutar a música, podemos notar que Nara Leão acrescenta elementos da Bossa nova, com a adição de instrumentos e de uma melodia mais "alegre" a sua interpretação para a faixa, enquanto Maria Bethânia coloca sua marca, com interpretações mais lentas e com poucos instrumentos acompanhamento a voz.
 
 
 ## Existe algum padrão instrumental, entre as músicas em cada movimento? Ex.: são mais dançantes, possuem muita fala.
@@ -136,11 +139,10 @@ cancoes %>%
 
 ```
 
-Cada movimento teve sua particularidade, empiricamente temos conhecimentos de que a jovem guarda foi marcado por músicas animadas, que agitaram a juventude de muitos na década de 60 e 70, a Bossa nova pela música de boêmios e clubes, e o Tropicalismo marcado pela música de protesto aos anos de chumbo no Brasil. Então a partir disso, podemos observar alguns padrões diante fatores como a dançabilidade, discurso, acústica e instrumentabilidade em cada canção. 
+Cada movimento teve sua particularidade, empiricamente temos conhecimentos de que a jovem guarda foi marcado por músicas animadas, que agitaram a juventude de muitos na década de 60, a Bossa nova pela música da boêmia e de clubes brasileiros, e o Tropicalismo marcado pela música de protesto aos anos de chumbo no Brasil. Então a partir disso, podemos observar alguns padrões diante fatores como a dançabilidade, discurso, acústica e instrumentabilidade em cada canção. 
 
-Diante dos dados, podemos ver que músicas da jovem guarda não são muito populares, mas possuem altos índices de dançabilidade, mostrando um certo padrão entre as músicas.
-Já na em canções com altos valores para discurso(speechiness), os dados trazem o Tropicalismo e algumas músicas da jovem guarda, uma surpresa, mas não o padrão para ambos os movimentos. Já para a Bossa nova, temos a maior presença de canções acústicas e alta popularidade e em questões de popularidade o Tropicalismo também se destaca.
-
+Diante dos dados, podemos notar que músicas da jovem guarda não são muito populares, mas possuem altos índices de dançabilidade, mostrando um certo padrão entre as músicas.
+Já na em canções com altos valores para discurso(speechiness), os dados trazem o Tropicalismo e algumas músicas da jovem guarda, uma surpresa, mas não o padrão para ambos os movimentos. Já para a Bossa nova, temos a maior presença de canções acústicas e alta popularidade e, em questões de popularidade o Tropicalismo também se destaca.
 
 ### Podemos notar que as cantoras Elis e Nara pertecem a dois movimentos musicais, a Bossa e Tropicalismo. Dessa forma, suas músicas são mais populares em qual dos movimentos?
 
@@ -157,7 +159,7 @@ cancoes %>%
                           '<br>Ano: ', year))
 ```
 
-Embora as artistas pertençam aos dois movimentos musicais, suas músicas são mais populares com a Bossa, mesmo tendo Lindonéia e Deus lhe pague com altos índices popularidade não conseguem superar as suas faixas da Bossa nova.
+Embora as artistas pertençam aos dois movimentos musicais, suas músicas são mais populares com a Bossa, mesmo tendo Lindonéia e Deus lhe pague com altos índices popularidade não conseguem superar as faixas de grande sucesso da Bossa nova.
 
 
 ### Ao longo do tempo, as músicas de cada movimento ficam mais populares ou o movimento vai enfraquecendo?
@@ -177,6 +179,6 @@ cancoes %>%
                           '<br>Popularidade: ', track_popularity))
 ```
 
-Com o passar do tempo, o movimento da jovem guarda vai perdendo a popularidade, pois na década de 60 estava em alta, mas no início da década de 70 vai enfraquecendo. Já o Tropicalismo, vai ganhando popularidade ao decorrer dos anos e podemos notar que as artistas que estamos analisando produziram muito em menos de 10 anos para esse movimento, pois há uma grande concentração das músicas entre a década de 60 e 70, devido a implantação da ditadura militar. Já a Bossa, também foi perdendo força ao longo dos anos, no entanto permaneceu por mais tempo desde a década de 50 até 80.
+Com o passar do tempo, o movimento da jovem guarda vai perdendo sua popularidade, já que na década de 60 estava em alta, mas no início da década de 70 vai enfraquecendo. Já o Tropicalismo, vai ganhando popularidade ao decorrer dos anos e podemos notar que as artistas que estamos analisando produziram muito em menos de 10 anos para esse movimento, pois há uma grande concentração das músicas entre a década de 60 e 70, este fato ocorre devido a implantação da ditadura militar durante esses anos e o surgimento do álbum Tropicália e da força dos festivais de músicas. Já a Bossa, também foi perdendo força ao longo dos anos, no entanto permaneceu por mais tempo desde a década de 50 até 80.
 
-Diante dessas análises acima, podemos concluir alguns padrões nas músicas de cada movimento, descobrir fatos curiosos com relação ao humor que cada canção desperta no público. Lembrando que esses dados são fornecidos pela API do Spotify, dessa forma alguns desses dados podem estar impressisos.
+Diante dessas análises acima, podemos perceber alguns padrões nas músicas de cada movimento, descobrir fatos curiosos com relação ao humor que cada canção desperta no público. Lembrando que esses dados são fornecidos pela API do Spotify, dessa forma alguns desses dados podem estar impressisos.
